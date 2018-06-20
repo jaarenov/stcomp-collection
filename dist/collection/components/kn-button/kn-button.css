@@ -1,0 +1,55 @@
+kn-button span {
+  background-color: #55f;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #999;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  margin: 4px;
+  padding: 12px 20px;
+  text-align: center;
+  transition: all .2s ease-in-out; }
+  kn-button span:active {
+    box-shadow: 0 0 16px #333 inset; }
+    kn-button span:active.clear, kn-button span:active.outline {
+      box-shadow: 0 0 8px #ccc inset; }
+    kn-button span:active.disabled, kn-button span:active.disabled.outline {
+      box-shadow: none; }
+  kn-button span:hover {
+    opacity: 0.8; }
+    kn-button span:hover.clear {
+      background-color: #eee; }
+    kn-button span:hover.disabled, kn-button span:hover.outline {
+      opacity: 1; }
+  kn-button span.clear {
+    background-color: white;
+    box-shadow: none;
+    color: #55f; }
+  kn-button span.disabled {
+    background-color: #666;
+    box-shadow: none;
+    color: #ccc;
+    cursor: default; }
+    kn-button span.disabled.clear, kn-button span.disabled.outline {
+      background-color: #ddd;
+      box-shadow: none;
+      color: #999;
+      opacity: 1; }
+    kn-button span.disabled.outline {
+      border: 1px solid #999; }
+  kn-button span.full {
+    display: block; }
+  kn-button span.large {
+    font-size: 1.5em;
+    padding: 16px 24px; }
+  kn-button span.outline {
+    background-color: white;
+    border: 1px solid #33f;
+    box-shadow: 2px 2px 2px #ccc;
+    color: #55f;
+    opacity: 0.8; }
+  kn-button span.round {
+    border-radius: 50%; }
+  kn-button span.small {
+    font-size: 0.8em;
+    padding: 8px 12px; }

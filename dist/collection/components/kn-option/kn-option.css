@@ -1,0 +1,10 @@
+kn-option .option-container {
+  cursor: pointer;
+  display: block;
+  padding: 8px 16px; }
+  kn-option .option-container:hover, kn-option .option-container.option-selected:hover {
+    background-color: #55f;
+    color: white; }
+  kn-option .option-container.option-selected {
+    background-color: rgba(85, 85, 255, 0.1);
+    color: #55f; }

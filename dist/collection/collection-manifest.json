@@ -1,0 +1,217 @@
+{
+  "components": [
+    {
+      "tag": "kn-button",
+      "dependencies": [],
+      "componentClass": "KnButton",
+      "componentPath": "components/kn-button/kn-button.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/kn-button/kn-button.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "clear",
+          "type": "Boolean",
+          "attr": "clear"
+        },
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "disabled",
+          "type": "Boolean",
+          "attr": "disabled"
+        },
+        {
+          "name": "full",
+          "type": "Boolean",
+          "attr": "full"
+        },
+        {
+          "name": "outline",
+          "type": "Boolean",
+          "attr": "outline"
+        },
+        {
+          "name": "round",
+          "type": "Boolean",
+          "attr": "round"
+        },
+        {
+          "name": "size",
+          "type": "String",
+          "attr": "size"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "attr": "value"
+        }
+      ]
+    },
+    {
+      "tag": "kn-code",
+      "dependencies": [],
+      "componentClass": "KnCode",
+      "componentPath": "components/kn-code/kn-code.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/kn-code/kn-code.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "block",
+          "type": "Boolean",
+          "attr": "block"
+        }
+      ],
+      "hostElement": {
+        "name": "element"
+      }
+    },
+    {
+      "tag": "kn-option",
+      "dependencies": [],
+      "componentClass": "KnOption",
+      "componentPath": "components/kn-option/kn-option.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/kn-option/kn-option.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "value",
+          "type": "String",
+          "mutable": true,
+          "attr": "value"
+        }
+      ],
+      "states": [
+        {
+          "name": "selected"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "parent:change",
+          "method": "setSelected",
+          "passive": false,
+          "capture": false
+        },
+        {
+          "event": "parent:load",
+          "method": "setSelected",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "hostElement": {
+        "name": "element"
+      },
+      "events": [
+        {
+          "event": "select"
+        }
+      ]
+    },
+    {
+      "tag": "kn-select",
+      "dependencies": [],
+      "componentClass": "KnSelect",
+      "componentPath": "components/kn-select/kn-select.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/kn-select/kn-select.scss"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "options",
+          "attr": "options"
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "attr": "placeholder"
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "mutable": true,
+          "attr": "value"
+        }
+      ],
+      "states": [
+        {
+          "name": "open"
+        },
+        {
+          "name": "text"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "select",
+          "method": "changeSelect",
+          "passive": false,
+          "capture": false
+        },
+        {
+          "event": "window:click",
+          "method": "closeForBlur",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "hostElement": {
+        "name": "element"
+      },
+      "events": [
+        {
+          "event": "change"
+        },
+        {
+          "event": "load"
+        }
+      ]
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.9.9",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": [
+    {
+      "components": [
+        "kn-button"
+      ]
+    },
+    {
+      "components": [
+        "kn-option",
+        "kn-select"
+      ]
+    },
+    {
+      "components": [
+        "kn-code"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+kn-select {
+  position: relative;
+
+  .select-container {
+    background-color: white;
+    border: 1px solid #55f;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #999;
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px;
+    padding: 8px 16px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 0 8px #666;
+    }
+
+    &.select-opened {
+      box-shadow: 0 0 8px #ccc inset;
+    }
+
+    .select-placeholder {
+      color: #999;
+    }
+    .select-more-symbol {
+      color: #55f;
+      display: inline-block;
+      font-size: 0.5em;
+      margin-left: 1em;
+    }
+  }
+  .options-container {
+    background-color: white;
+    border: 1px solid #55f;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #999;
+    display: none;
+    left: 4px;
+    position: absolute;
+    width: max-content;
+    z-index: 10000;
+
+    &.options-opened {
+      display: block;
+    }
+  }
+}

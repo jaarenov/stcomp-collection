@@ -1,0 +1,14 @@
+kn-code {
+  .code-container {
+    background-color: #eee;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    padding: 0 0.5em;
+
+    &.block {
+      overflow-x: auto;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

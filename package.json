@@ -1,0 +1,42 @@
+{
+  "name": "knitter-ui",
+  "version": "0.0.4",
+  "description": "使用Web组件标准的、不依赖任何框架的交互式UI库 / A framework-less interactive UI library built on standard Web Components",
+  "scripts": {
+    "build": "stencil build --prerender",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/core": "next",
+    "lithiumjs": "0.0.22"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.5",
+    "@stencil/utils": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twincle/knitter-ui.git"
+  },
+  "keywords": [
+    "web-components",
+    "components",
+    "ui-library"
+  ],
+  "author": "twincle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/twincle/knitter-ui/issues"
+  },
+  "homepage": "https://github.com/twincle/knitter-ui#readme",
+  "main": "dist/collection/index.js",
+  "types": "dist/collection/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "browser": "dist/knitter.js"
+}

@@ -1,0 +1,83 @@
+
+kn-button {
+  span {
+    background-color: #55f;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px #999;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 4px;
+    padding: 12px 20px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+
+    &:active {
+      box-shadow: 0 0 16px #333 inset;
+
+      &.clear,
+      &.outline {
+        box-shadow: 0 0 8px #ccc inset;
+      }
+      &.disabled,
+      &.disabled.outline {
+        box-shadow: none;
+      }
+    }
+    &:hover {
+      opacity: 0.8;
+
+      &.clear {
+        background-color: #eee;
+      }
+      &.disabled,
+      &.outline {
+        opacity: 1;
+      }
+    }
+
+    &.clear {
+      background-color: white;
+      box-shadow: none;
+      color: #55f;
+    }
+    &.disabled {
+      background-color: #666;
+      box-shadow: none;
+      color: #ccc;
+      cursor: default;
+
+      &.clear,
+      &.outline {
+        background-color: #ddd;
+        box-shadow: none;
+        color: #999;
+        opacity: 1;
+      }
+      &.outline {
+        border: 1px solid #999;
+      }
+    }
+    &.full {
+      display: block;
+    }
+    &.large {
+      font-size: 1.5em;
+      padding: 16px 24px;
+    }
+    &.outline {
+      background-color: white;
+      border: 1px solid #33f;
+      box-shadow: 2px 2px 2px #ccc;
+      color: #55f;
+      opacity: 0.8;
+    }
+    &.round {
+      border-radius: 50%;
+    }
+    &.small {
+      font-size: 0.8em;
+      padding: 8px 12px;
+    }
+  }
+}
